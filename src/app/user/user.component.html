@@ -1,6 +1,10 @@
 <div>
     <button>
-        <img/>
-        <span> NAME</span>
+        <img [src]= " 'assets/users/' + selectedUser.avatar" [alt]="selectedUser.name"/>
+        <!-- This is property binding :allows you to bind element properties to dynamic values.-->
+
+        <span> {{selectedUser.name}}</span>
+        <!-- Angular interpolation to show the user's name dynamically. -->
+
     </button>
 </div>
